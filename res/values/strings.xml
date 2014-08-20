@@ -1,0 +1,18 @@
+<resources>
+
+    <string name="app_name">安卓通用模板</string>
+    
+    <!-- 无内容时的提示  -->
+    <string name="empty_toast">暂无内容哦</string>
+	
+    <string name="ac_dslv">DragSortListView</string>
+    <string name="ac_dslv_desc">拖动排序滑动删除的列表</string>
+    <string name="ac_pull_refresh">PullRefreshListView</string>
+    <string name="ac_pull_refresh_desc">拉动刷新的列表</string>
+    <string name="ac_gen_barcode">生成二维码</string>
+    <string name="ac_gen_barcode_desc">输入字符串生成二维码</string>
+    <string name="ac_news">新闻浏览</string>
+    <string name="ac_news_desc">新闻浏览，采用混合式开发</string>
+    <string name="ac_hz_to_py">汉字转拼音</string>
+    <string name="ac_hz_to_py_desc">汉字转拼音使用方法</string>
+</resources>

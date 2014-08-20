@@ -1,0 +1,81 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.common.androidtemplete"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:name="com.common.templete.app.TEMApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/Templete.Light" >
+        
+        <activity 
+            android:name="com.common.templete.main.MainActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 可拖动排序滑动删除的列表模板 -->
+        <activity
+            android:name="com.common.templete.activity.DragSortListViewActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" 
+            android:label="@string/ac_dslv">
+            <!--  
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        
+        <!-- 拉动刷新的列表模板  -->
+        <activity
+            android:name="com.common.templete.activity.PullRefreshListViewActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" 
+            android:label="@string/ac_pull_refresh">
+            
+        </activity>
+        
+         <!-- 生成二维码  -->
+        <activity
+            android:name="com.common.templete.activity.GenBarcodeActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" 
+            android:label="@string/ac_gen_barcode">
+            
+        </activity>
+        
+        <!-- 新闻浏览  -->
+        <activity 
+            android:name="com.common.templete.activity.NewsReaderActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" 
+            android:label="@string/ac_news">
+            
+        </activity>
+        
+        <!-- 汉字转拼音  -->
+        <activity 
+            android:name="com.common.templete.activity.HzToPinyinActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" 
+            android:label="@string/ac_hz_to_py">
+            
+        </activity>
+    </application>
+
+</manifest>
